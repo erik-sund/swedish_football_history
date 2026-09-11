@@ -1,0 +1,212 @@
+/* hem.html filen */
+
+/*för att anpassa själva loggan*/
+.logo{
+    max-height: 60px;
+    width: 40px;
+    display: block;
+    margin: 5px auto;
+}
+
+/*för rubriken och omkringliggande fält*/
+header{
+    background-color: #004b87;
+    text-align: center;
+    padding: 15px 10px;
+    color: white;
+}
+
+/*för flikarna och omkringliggande fält*/
+nav{
+    background-color: #ffcd00;
+    text-align: center;
+    padding: 10px;
+}
+
+/*också till för flikarna men anpassat som lista*/
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/*gör listan horizontell*/
+li {
+    display: inline;
+}
+
+/*för att göra flikarna mer behagliga*/
+a:link{
+    text-decoration: none;
+    margin: 10px;
+}
+
+/*för bilderna i grupp*/
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;   
+}
+
+/*till texten under bilderna*/
+.gallery-item {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+/*till för bilderna som individuella foton*/
+.gallery-item img {
+    height: 300px;
+    width: 360px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+/*till texten under bilderna*/
+.gallery-item p {
+    font-weight: bold;
+    color: #004b87;
+    margin-top: 15px;
+    font-size: 1.15rem;
+}
+
+/*gör så att sidan anpassar sig efter olika skärmstorlekar*/
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*till sidfoten*/
+footer{
+    border: 2px solid black;
+    text-align: center;
+}
+
+/* kontakt.html filen */
+
+.background {
+    background-color: #e0cd3e;
+}
+
+/*skapar grid till kontaktsidan*/
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 30px;
+    max-width: 900px;
+    margin: 40px auto;
+    font-family: sans-serif;
+}
+
+/*till "Contact us"-texten*/
+.contact .left h1 {
+    color: #004b87;
+    font-size: 2.2rem;
+}
+
+/*till själva kontaktfältet*/
+.contact .right {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/*gör så att kontaktformuläret hamnar i kolumn*/
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*för själva inmatningsfälten*/
+.contact form input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/*för själva skicka-knappen*/
+.contact form button {
+    background-color: #004b87;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*gör så att när man håller musen över "send your message"-knappen så blir knappen gul*/
+.contact form button:hover {
+    background-color: #ffcd00;
+    color: #004b87;
+}
+
+/*gör så att sidan anpassar sig efter olika skärmstorlekar*/
+@media (max-width: 768px) {
+    .contact {
+        grid-template-columns: 1fr;
+    }
+}
+
+/*Till information.html filen */
+
+/*till informationsdelen som helhet*/
+.information {
+    margin: 40px 20px;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+/*till själva rubrikerna*/
+.information h2 {
+    color: #004b87;
+    font-size: 1.8rem;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 3px solid blue;
+    padding-bottom: 5px;
+    display: inline-block;
+}
+
+/*till själva faktarutorna*/
+.information p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #333333;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    border-left: 5px solid #004b87;
+}
+
+/* Till omoss_html filen */
+
+/*till "Vad handlar denna sidan om"-rubriken*/
+.color_omoss h3{
+    color: #004b87;
+}
+
+/*till "Vilka är vi"-rubriken*/
+.color_omoss h2{
+    color: #004b87;
+}
+
+/*till själva faktarutorna*/
+.color_omoss p {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #333333;
+    margin-bottom: 40px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 6px;
+    border-left: 5px solid #004b87;
+    font-family: sans-serif;
+}
